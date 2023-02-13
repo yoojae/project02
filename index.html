@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+    <input type="checkbox" id="chk_floating">
+    <div class="floating_banner">
+        <div>
+            <label for="chk_floating" class="floating_btn">×</label>
+            <div><a href="#"></a></div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="chk_popupbanner">
+    <div class="pop_box">
+        <div class="popup_banner">
+            <div><a href="#"><img src="./images/popup/popup01.jpg" alt="popup01"></a></div>
+            <div><a href="#"><img src="./images/popup/popup02_orginal.png" alt="popup02"></a></div>
+            <div>
+                <label for="chk_popupbanner">다시보지 않기</label>
+                <label for="chk_popupbanner">닫기</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer_header">
+        <div class="inner_header">
+            <header class="header">
+                <div class="header_box">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <nav class="gnb">
+                        <div><a href="#">로그인</a></div>
+                        <div><a href="#">알림마당</a></div>
+                        <div><a href="#">고객센터</a></div>
+                        <div><a href="#">ENGLISH</a></div>
+                    </nav>
+                    <div class="mob_gnb">
+                        <span><a href="#"><i class="fa-regular fa-user"></i></a></span>
+                        <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+                        <span><a href="#"><img src="./images/search.png" alt="search"></a></span>
+                    </div>
+                    <div class="search_text_box">
+                        <input type="text">
+                        <button class="search_bar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="mob_bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>    
+                </div>
+                
+                <div class="hide_sub">
+                    <div class="sub">
+                        <div class="sub_box">
+                            <div class="sub_logo">
+                                <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                            </div>
+                            <div class="sub_close_btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <nav class="sub_gnb">
+                            <div><a href="#">로그인</a></div>
+                            <div><a href="#">알림마당</a></div>
+                            <div><a href="#">고객센터</a></div>
+                            <div><a href="#">ENGLISH</a></div>
+                        </nav>
+                        <div class="sub_icon_box">
+                            <div class="sub_schedule">
+                                상영시간표 <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div class="sub_sns">
+                                <span><i class="fa-brands fa-instagram"></i></span>
+                                <span><i class="fa-brands fa-square-facebook"></i></span>
+                                <span><i class="fa-brands fa-youtube"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="lnb">
+                        <li class="m1"><a href="#">영화<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="#">상영시간표</a></li>
+                                <li><a href="#">현재상영프로그램</a></li>
+                                <li><a href="#">상영예정프로그램</a></li>
+                                <li><a href="#">지난프로그램</a></li>
+                                <li><a href="#">영화비평</a></li>
+                                <li><a href="#">영화와 소통</a></li>
+                                <li><a href="#">시네마테크 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="m2"><a href="#">공연<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="#">공연가이드</a></li>
+                                <li><a href="#">공연일정</a></li>
+                                <li><a href="#">예매안내</a></li>
+                                <li><a href="#">지난공연</a></li>
+                                <li><a href="#">객석나눔</a></li>
+                            </ul>
+                        </li>
+                        <li class="m3"><a href="#">영화·예술교육<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="#">아카데미 일정</a></li>
+                                <li><a href="#">영화 아카데미</a></li>
+                                <li><a href="#">예술 아카데미</a></li>
+                                <li><a href="#">어린이청소년</a></li>
+                                <li><a href="#">아카데미</a></li>
+                                <li><a href="#">시설/기자재</a></li>
+                                <li><a href="#">사용신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="m4"><a href="#">영화 도서관<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">자료검색</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">행사안내</a></li>
+                                <li><a href="#">필름 아카이브</a></li>
+                            </ul>
+                        </li>
+                        <li class="m5"><a href="#">전시·행사<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="#">전시·행사가이드</a></li>
+                                <li><a href="#">전시·행사일정</a></li>
+                                <li><a href="#">지난전시·행사</a></li>
+                                <li><a href="#">행사장배치도</a></li>
+                            </ul>
+                        </li>
+                        <li class="m6"><a href="#">이벤트·제휴<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="#">제휴</a></li>
+                                <li><a href="#">회원제안내</a></li>
+                                <li><a href="#">메세나 기업 모집</a></li>
+                                <li><a href="#">광고신청</a></li>
+                                <li><a href="#">촬영신청</a></li>
+                            </ul>
+                        </li>
+                        <li class="m7"><a href="#">영화의전당<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="m_sub">
+                                <li><a href="./sub_page/sub_index.html">영화의 전당 소개<span><i class="fa-solid fa-asterisk"></i></span></a></li>
+                                <li><a href="#">대관 및 배치도</a></li>
+                                <li><a href="#">시설소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">주차안내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hide_back"></div>
+            </header>
+        </div>
+    </div>
+
+
+    <div class="visual_main">
+        <div class="visualswiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./images/visual_main/pc_visual_main_img01.jpg">
+                            <source media="(min-width:601px)" srcset="./images/visual_main/tablet_visual_main_img01.jpg">
+                            <source media="(min-width:320px)" srcset="./images/visual_main/mobile_visual_main_img01.jpg">
+                            <img src="./images/visual_main/visual_main_img01_original.jpg" alt="모든 장치 이미지 사용" style="width: 100%;" />
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./images/visual_main/pc_visual_main_img02.jpg">
+                            <source media="(min-width:601px)" srcset="./images/visual_main/tablet_visual_main_img02.jpg">
+                            <source media="(min-width:320px)" srcset="./images/visual_main/mobile_visual_main_img02.jpg">
+                            <img src="./images/visual_main/visual_main_img02_original.jpg" alt="모든 장치 이미지 사용" style="width: 100%;" />
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./images/visual_main/pc_visual_main_img03.jpg">
+                            <source media="(min-width:601px)" srcset="./images/visual_main/tablet_visual_main_img03.jpg">
+                            <source media="(min-width:320px)" srcset="./images/visual_main/mobile_visual_main_img03.jpg">
+                            <img src="./images/visual_main/visual_main_img03_original.jpg" alt="모든 장치 이미지 사용" style="width: 100%;" />
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./images/visual_main/pc_visual_main_img04.jpg">
+                            <source media="(min-width:601px)" srcset="./images/visual_main/tablet_visual_main_img04.jpg">
+                            <source media="(min-width:320px)" srcset="./images/visual_main/mobile_visual_main_img04.jpg">
+                            <img src="./images/visual_main/visual_main_img04_original.jpg" alt="모든 장치 이미지 사용" style="width: 100%;" />
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <picture>
+                            <source media="(min-width:769px)" srcset="./images/visual_main/pc_visual_main_img05.jpg">
+                            <source media="(min-width:601px)" srcset="./images/visual_main/tablet_visual_main_img05.jpg">
+                            <source media="(min-width:320px)" srcset="./images/visual_main/mobile_visual_main_img05.jpg">
+                            <img src="./images/visual_main/visual_main_img05_original.jpg" alt="모든 장치 이미지 사용" style="width: 100%;" />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-pagination pagination_thumb">
+                <div class="swiper-pagination-bullet"></div>
+                <div class="swiper-pagination-bullet"></div>
+                <div class="swiper-pagination-bullet"></div>
+                <div class="swiper-pagination-bullet"></div>
+                <div class="swiper-pagination-bullet"></div>
+            </div>
+
+            <div class="custom_box">
+                <div class="swiper-pagination pagination_custom"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="metaphor">
+        <section>
+            <div>
+                <a href="#">
+                    <div>
+                        <img src="./images/metaphor/white/movie.jpg" alt="movie">
+                        <img src="./images/metaphor/black/movie_on.jpg" alt="movie_on" class="movie_on on">
+                    </div>
+                    <span>영화</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <div>
+                        <img src="./images/metaphor/white/spotlight.jpg" alt="spotlight">
+                        <img src="./images/metaphor/black/spotlight_on.jpg" alt="spotlight_on" class="spotlight_on on">
+                    </div>
+                    <span>공연</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <div>
+                        <img src="./images/metaphor/white/clapperboard.jpg" alt="board">
+                        <img src="./images/metaphor/black/clapperboard_on.jpg" alt="clapperboard_on" class="clapperboard_on on">
+                    </div>
+                    <span>
+                        현재
+                        <sapn>상영작</sapn>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <a href="#">
+                    <div>
+                        <img src="./images/metaphor/white/ticket.jpg" alt="ticket">
+                        <img src="./images/metaphor/black/ticket_on.jpg" alt="ticket_on" class="ticket_on on">
+                    </div>
+                    <span>
+                        영화
+                        <span>예매권</span>
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <div>
+                        <img src="./images/metaphor/white/ticketpackage.jpg" alt="package">
+                        <img src="./images/metaphor/black/ticketpackage_on.jpg" alt="ticketpackage_on" class="ticketpackage_on on">
+                    </div>
+                    <span>
+                        공연
+                        <span>패키지</span>
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <div>
+                        <img src="./images/metaphor/white/usergrade.jpg" alt="grade">
+                        <img src="./images/metaphor/black/usergrade_on.jpg" alt="usergrade_on" class="usergrade_on on">
+                    </div>
+                    <span>
+                        회원제
+                        <span>안내</span>
+                    </span>
+                </a>
+            </div>
+        </section>
+        
+    </div>
+    
+    <p class="list_title"><b>주간 상영리스트</b></p>
+    <div class="list_box">
+        <section class="week_list">
+            <ul class="week_title">
+                <li>2022년 11월 첫째주</li>
+                <li>2022년 11월 둘째주</li>
+                <li>2022년 11월 셋째주</li>
+                <li>2022년 11월 넷째주</li>
+                <li>2022년 11월 다섯째주</li>
+            </ul>
+        
+            <ul class="list_sheet">
+                <li>
+                    <div>
+                        <div class="list_box01 li">
+                            <p><a href="#"><span>11월1일 화요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월1일 화요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;12:40 (가치봄) 육사오</span></a></p>
+                            <p><a href="#"><span>11월2일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월2일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:30 (리플레이) 젊은 남자</span></a></p>
+                            <p><a href="#"><span>11월3일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월3일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 공조2:인터내셔날</span></a></p>
+                        </div>
+                        <div class="list_box02 li">
+                            <div>
+                                <img src="./images/poster/m1.jpg" alt="poster01">
+                            </div>
+                            <span>알카라스의 여름</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list_box01 li">
+                            <p><a href="#"><span>11월7일 화요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월8일 화요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;12:40 (가치봄) 물방울을 그리는 남자</span></a></p>
+                            <p><a href="#"><span>11월8일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:00 (가치봄) 2차 송환</span></a></p>
+                            <p><a href="#"><span>11월9일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:30 (리플레이) 젊은 남자</span></a></p>
+                            <p><a href="#"><span>11월9일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 태안</span></a></p>
+                            <p><a href="#"><span>11월10일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 공조2:인터내셔날</span></a></p>
+                        </div>
+                        <div class="list_box02 li">
+                            <div>
+                                <img src="./images/poster/m2.jpg" alt="poster02">
+                            </div>
+                            <span>어제 뭐 먹었어?</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list_box01 li">
+                            <p><a href="#"><span>11월14일 화요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (가치봄) 에브리씽 에브리웨어 올앳원스</span></a></p>
+                            <p><a href="#"><span>11월15일 화요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;12:40 (가치봄) 어제 뭐 먹었어?</span></a></p>
+                            <p><a href="#"><span>11월16일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:00 (가치봄) 아나이스 인 러브</span></a></p>
+                            <p><a href="#"><span>11월16일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:30 (리플레이) 젊은 남자</span></a></p>
+                            <p><a href="#"><span>11월17일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 태안</span></a></p>
+                            <p><a href="#"><span>11월17일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 공조2:인터내셔날</span></a></p>
+                        </div>
+                        <div class="list_box02 li">
+                            <div>
+                                <img src="./images/poster/m3.jpg" alt="poster03">
+                            </div>
+                            <span>2차 송환</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list_box01 li">
+                            <p><a href="#"><span>11월21일 화요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월21일 화요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;12:40 (리플레이) 육사오</span></a></p>
+                            <p><a href="#"><span>11월22일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월22일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:30 (가치봄) 젊은 남자</span></a></p>
+                            <p><a href="#"><span>11월23일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월24일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 공조2:인터내셔날</span></a></p>
+                        </div>
+                        <div class="list_box02 li">
+                            <div>
+                                <img src="./images/poster/m4.jpg" alt="poster04">
+                            </div>
+                            <span>태안</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="list_box01 li">
+                            <p><a href="#"><span>11월28일 화요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (리플레이) 애프터 미투</span></a></p>
+                            <p><a href="#"><span>11월28일 화요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;12:40 (가치봄) 태안</span></a></p>
+                            <p><a href="#"><span>11월28일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                            <p><a href="#"><span>11월29일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:30 (리플레이) 젊은 남자</span></a></p>
+                            <p><a href="#"><span>11월29일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (가치봄) 아나이스 인 러브</span></a></p>
+                            <p><a href="#"><span>11월29일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;19:50 (리플레이) 물방울을 그리는 남자</span></a></p>
+                        </div>
+                        <div class="list_box02 li">
+                            <div>
+                                <img src="./images/poster/m5.jpg" alt="poster05">
+                            </div>
+                            <span>
+                                에브리씽 에브리웨어<br/>
+                                올앳원스
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="more_btn"><i class="fa-solid fa-angle-down"></i></div>
+            
+            <div class="list_btn_left libtn"><i class="fa-solid fa-less-than"></i></div>
+            <div class="list_btn_right libtn"><i class="fa-solid fa-greater-than"></i></div>
+    
+        </section>
+
+        <div class="no_btn"><i class="fa-solid fa-angle-up"></i></div>
+
+        <ul class="list_sheet_second">
+            <li>
+                <div>
+                    <div class="list_box01 li">
+                        <p><a href="#"><span>11월4일 금요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:30 (리플레이) 젊은 남자</span></a></p>
+                        <p><a href="#"><span>11월4일 금요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;11:00 (가치봄) 에브리씽 에브리웨어 올앳원스</span></a></p>
+                        <p><a href="#"><span>11월5일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;12:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                        <p><a href="#"><span>11월5일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:30 (리플레이) 젊은 남자</span></a></p>
+                        <p><a href="#"><span>11월6일 일요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:00 (가치봄) 태안</span></a></p>
+                        <p><a href="#"><span>11월6일 일요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;18:00 (리플레이) 공조2:인터내셔날</span></a></p>
+                    </div>
+                    <div class="list_box02 li">
+                        <div>
+                            <img src="./images/poster/m6.jpg" alt="poster06">
+                        </div>
+                        <span>아나이스 인 러브</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="list_box01 li">
+                        <p><a href="#"><span>11월10일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;09:00 (가치봄) 육사오</span></a></p>
+                        <p><a href="#"><span>11월11일 금요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;11:30 (리플레이) 젊은 남자</span></a></p>
+                        <p><a href="#"><span>11월11일 금요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;12:00 (가치봄) 알카라스의 여름</span></a></p>
+                        <p><a href="#"><span>11월11일 금요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:30 (리플레이) 태안</span></a></p>
+                        <p><a href="#"><span>11월12일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;11:00 (리플레이) 공조2:인터내셔날</span></a></p>
+                        <p><a href="#"><span>11월12일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;13:30 (리플레이) 공조2:인터내셔날</span></a></p>
+                    </div>
+                    <div class="list_box02 li">
+                        <div>
+                            <img src="./images/poster/m7.jpg" alt="poster07">
+                        </div>
+                        <span>애프터 미투</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="list_box01 li">
+                        <p><a href="#"><span>11월18일 금요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (가치봄) 에브리씽 에브리웨어 올앳원스</span></a></p>
+                        <p><a href="#"><span>11월18일 금요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;11:00 (가치봄) 태안</span></a></p>
+                        <p><a href="#"><span>11월19일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:00 (가치봄) 어제 뭐 먹었어?</span></a></p>
+                        <p><a href="#"><span>11월19일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;17:30 (리플레이) 젊은 남자</span></a></p>
+                        <p><a href="#"><span>11월20일 일요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;20:00 (리플레이) 공조2:인터내셔날</span></a></p>
+                        <p><a href="#"><span>11월20일 일요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;21:00 (리플레이) 태안</span></a></p>
+                    </div>
+                    <div class="list_box02 li">
+                        <div>
+                            <img src="./images/poster/m8.jpg" alt="poster08">
+                        </div>
+                        <span>시대혁명</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="list_box01 li">
+                        <p><a href="#"><span>11월24일 목요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:30 (가치봄) 태안</span></a></p>
+                        <p><a href="#"><span>11월25일 금요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;12:00 (리플레이) 시대혁명</span></a></p>
+                        <p><a href="#"><span>11월25일 금요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;13:00 (가치봄) 공조2:인터내셔날</span></a></p>
+                        <p><a href="#"><span>11월25일 금요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:30 (리플레이) 젊은 남자</span></a></p>
+                        <p><a href="#"><span>11월26일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;20:00 (리플레이) 공조2:인터내셔날</span></a></p>
+                        <p><a href="#"><span>11월26일 토요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;21:00 (리플레이) 에브리싱 에브리웨어 올앳원스</span></a></p>
+                    </div>
+                    <div class="list_box02 li">
+                        <div>
+                            <img src="./images/poster/m9.jpg" alt="poster09">
+                        </div>
+                        <span>물방울을 그리는 남자</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="list_box01 li">
+                        <p><a href="#"><span>11월29일 화요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;10:00 (가치봄) 물방울을 그리는 남자</span></a></p>
+                        <p><a href="#"><span>11월29일 화요일&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;11:30 (가치봄) 아나이스 인 러브</span></a></p>
+                        <p><a href="#"><span>11월30일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;11:00 (가치봄) 태안</span></a></p>
+                        <p><a href="#"><span>11월30일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;15:30 (리플레이) 젊은 남자</span></a></p>
+                        <p><a href="#"><span>11월30일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;18:00 (리플레이) 성덕</span></a></p>
+                        <p><a href="#"><span>11월30일 수요일&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;21:00 (리플레이) 공조2:인터내셔날</span></a></p>
+                    </div>
+                    <div class="list_box02 li">
+                        <div>
+                            <img src="./images/poster/m10.jpg" alt="poster10">
+                        </div>
+                        <span>
+                            성덕
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <p class="movie_list"><b>상영 리스트</b></p>
+    <div class="month_calendar">
+        <ul>
+            <li>2022년 11월</li>
+            <li>시네마테크</li>
+            <li>소극장</li>
+            <li>인디+</li>
+            <li>중극장</li>
+            <li>하늘연극장</li>
+            <li>야외극장</li>
+        </ul>
+
+        <table class="calendar">
+            <colgroup>
+                <col width="31px">
+                <col width="31px">
+                <col width="31px">
+                <col width="31px">
+                <col width="31px">
+                <col width="31px">
+                <col width="31px">
+            </colgroup>
+            <tr>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+                <td>일</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <section class="cinematech">
+            <div class="cinema_list01 tech">
+                <p><a href="#"><span>10:00&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;(가치봄) 공조2:인터내셔날</span></a></p>
+                <p><a href="#"><span>12:40&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;(가치봄) 육사오</span></a></p>
+                <p><a href="#"><span>15:00&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;(가치봄) 공조2:인터내셔날</span></a></p>
+                <p><a href="#"><span>17:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;(리플레이) 젊은 남자</span></a></p>
+                <p><a href="#"><span>19:50&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;(리플레이) 공조2:인터내셔날</span></a></p>
+            </div>
+        </section>
+
+        <section class="mini">
+            <div class="mini_list01 th">
+                <p><a href="#"><span>10:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;어제 뭐 먹었어</span></a></p>
+                <p><a href="#"><span>12:50&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;에브리씽 에브리웨어 올앳원스</span></a></p>
+                <p><a href="#"><span>15:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;아나이스 인 러브</span></a></p>
+                <p><a href="#"><span>17:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;에브리씽 에브리웨어 올앳원스</span></a></p>
+                <p><a href="#"><span>20:10&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;그 남자, 좋은 사람</span></a></p>
+            </div>
+        </section>
+
+        <section class="indiplus">
+            <div class="indi_list01 plus">
+                <p><a href="#"><span>11:40&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;물방울을 그리는 남자</span></a></p>
+                <p><a href="#"><span>13:30&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;태안</span></a></p>
+                <p><a href="#"><span>15:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;달이 지는 밤</span></a></p>
+                <p><a href="#"><span>17:00&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;낮과 달</span></a></p>
+                <p><a href="#"><span>19:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;죽어도 자이언츠</span></a></p>
+            </div>
+        </section>
+
+        <section class="mid">
+            <div class="mid_list01 th">
+                <p><a href="#"><span>09:30&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;티켓 투 파라다이스</span></a></p>
+                <p><a href="#"><span>11:35&nbsp;<img src="./images/age_svg/12.svg" alt="svg12">&nbsp;자백</span></a></p>
+                <p><a href="#"><span>13:40&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;리멤버</span></a></p>
+                <p><a href="#"><span>16:10&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;블랙 아담</span></a></p>
+                <p><a href="#"><span>18:40&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;자백</span></a></p>
+                <p><a href="#"><span>20:45&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;리멤버</span></a></p>
+            </div>
+        </section>
+
+        <section class="sky">
+            <div class="sky_list01 th">
+                <p><a href="#"><span>10:00&nbsp;[예술교육]&nbsp;티켓 투 파라다이스</span></a></p>
+            </div>
+        </section>
+
+        <section class="outdoor">
+            <div class="out_list01 door">
+                <p><a href="#"><span>20:45&nbsp;<img src="./images/age_svg/15.svg" alt="svg15">&nbsp;야외극장</span></a></p>
+            </div>
+        </section>
+
+    </div>
+
+
+    <div class="trailer">
+        <div class="trailer_video">
+            <video controls="100%" poster="./images/trailer_img.png">
+                <source src="./images/trailer.mp4">
+            </video>
+        </div>
+        
+        <div class="trailer_txt">
+            <p>매일매일 365일</p>
+            <p>
+                <b>
+                    문화예술의 중심지<br/>
+                    예술의 전당
+                </b>
+            </p>
+            <p>
+                대중영화, 예술영화 , 고전영화, 독립영화 등<br/>
+                다양한 프로그램 운영과 이벤트를 통해 관객들의<br/>
+                활발한 참여와 소통을 나누어 더욱 다채롭고<br/>
+                수준 높은 문화 콘텐츠를 제공
+            </p>
+        </div>
+    </div>
+
+    <input type="radio" name="program" id="pro_tab01" checked>
+    <input type="radio" name="program" id="pro_tab02">
+    <input type="radio" name="program" id="pro_tab03">
+    <div class="program">
+        <div>
+            <b>추천 프로그램</b>
+            <div class="program_button_box">
+                <div class="program_button">
+                    <div class="swiper-button-prev"><i class="fa-solid fa-less-than"></i></div>
+                    <div class="swiper-button-next"><i class="fa-solid fa-greater-than"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="program_label">
+            <label for="pro_tab01" class="pro_tab01">영화</label>
+            <label for="pro_tab02" class="pro_tab02">공연</label>
+            <label for="pro_tab03" class="pro_tab03">전시행사</label>
+        </div>
+        
+        <div class="program_sheet_box">
+            <section>
+                <div class="movie_sheet swiper">
+                    <section class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>[시네마테크] 키친 싱크대의 시대 영국 뉴웨이브</b></p>
+                                    <p>2022.11.04 ~ 2022.12.06</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_01.jpg" alt="movie01">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 예술영화</b></p>
+                                    <p>2022.01.01 ~ 2022.12.31</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_02.gif" alt="movie02">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>11월 한국 독립영화</b></p>
+                                    <p>2022.11.01 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_03.gif" alt="movie03">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 대중영화</b></p>
+                                    <p>2022.01.01 ~ 2022.12.31</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_04.gif" alt="movie04">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 이지훈의 시네필로</b></p>
+                                    <p>2022.11.10 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_05.jpg" alt="movie05">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2021 시네 리플레이</b></p>
+                                    <p>2022.11.01 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_06.gif" alt="movie06">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>인디스데이</b></p>
+                                    <p>2022.01.13 ~ 2022.12.28</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_07.jpg" alt="movie07">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 서울인디영화</b></p>
+                                    <p>2022.01.18 ~ 2022.12.31</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_08.gif" alt="movie08">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>57th 작은영화 영화제</b></p>
+                                    <p>2022.01.18 ~ 2022.12.31</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_09.gif" alt="movie09">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 로컬 픽 시간과 빛</b></p>
+                                    <p>2022.04.29 ~ 2022.12.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_10.jpg" alt="movie10">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 가치봄 상영</b></p>
+                                    <p>2022.05.23 ~ 2022.12.31</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_11.jpg" alt="movie11">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>미디어 아트 상영회</b></p>
+                                    <p>2022.06.25 ~ 2022.12.31</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_12.jpg" alt="movie12">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 아프리카 영화제</b></p>
+                                    <p>2022.10.20 ~ 2022.11.02</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_13.jpg" alt="movie13">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>안나 카레니나</b></p>
+                                    <p>2022.11.01 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_14.jpg" alt="movie14">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 유엔 평화 영화제</b></p>
+                                    <p>2022.10.30 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_15.jpg" alt="movie15">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>17th 대한민국대학영화제</b></p>
+                                    <p>2022.11.11 ~ 2022.11.13</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_movie/dongq_movie_16.jpg" alt="movie16">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="show_sheet swiper">
+                    <section class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>별빛 놀이터</b></p>
+                                    <p>2022.06.23 ~ 2022.07.11</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_01.jpg" alt="show01">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 꿈다락 토요문화학교 예술감상교육</b></p>
+                                    <p>2022.11.01 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_02.jpg" alt="show02">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 기술과 예술의 합</b></p>
+                                    <p>2022.11.18 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_03.jpg" alt="show03">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>17th 매직위크 Great</b></p>
+                                    <p>2022.11.11 ~ 2022.11.12</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_04.jpg" alt="show04">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>17th 매직위크 Amazing</b></p>
+                                    <p>2022.11.12 ~ 2022.11.13</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_05.jpg" alt="show05">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>한낮의 유 콘서트</b></p>
+                                    <p>2022.11.16 ~ 2022.11.16</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_06.jpg" alt="show06">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>카즈미 다테이시 트리오 내한 공연</b></p>
+                                    <p>2022.11.17 ~ 2022.11.17</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_07.jpg" alt="show07">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>우크라이나 체르니우치 필하모니</b></p>
+                                    <p>2022.11.20 ~ 2022.11.20</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_08.png" alt="show08">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>스크리아빈에서 슈만, 다시 스크리아빈</b></p>
+                                    <p>2022.11.27 ~ 2022.11.27</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_09.png" alt="show09">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>조희창의 클래식 북살롱</b></p>
+                                    <p>2022.07.27 ~ 2022.11.30</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_10.jpg" alt="show10">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>2022 11시 음악회</b></p>
+                                    <p>2022.05.25 ~ 2022.12.28</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_11.jpg" alt="show11">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <a href="#">
+                                    <p><b>음유시인 JEWEL</b></p>
+                                    <p>2022.12.04 ~ 2022.12.04</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="wish"><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_show/dongq_concert_12.jpg" alt="show12">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+    
+                <div class="event_sheet">
+                    <section>
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <p><b>MOI 뮤지엄 오브 일루전</b></p>
+                                    <p>2020.03.12 ~ 2024.03.03</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_event/dongq_exhibition_01.jpg" alt="event01">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <a href="#">
+                                    <p><b>매직 라운지</b></p>
+                                    <p>2022.11.12 ~ 2022.11.13</p>
+                                </a>
+                            </div>
+                            <div>
+                                <div><i class="fa-solid fa-heart"></i></div>
+                                <img src="./images/program_event/dongq_exhibition_02.jpg" alt="event02">
+                                <div class="poster_on">
+                                    <a href="#">예매</a>
+                                    <a href="#">자세히</a>
+                                </div>
+                            </div>
+                        </div>                                            
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    
+    <div class="critic">
+        <p><b>영화 비평</b></p>
+
+        <div class="critic_btn_box">
+            <div class="critic_plus_btn"><i class="fa-solid fa-plus"></i></div>
+            <div class="critic_left"><i class="fa-solid fa-less-than"></i></div>
+            <div class="critic_right"><i class="fa-solid fa-greater-than"></i></div>
+        </div>
+
+        <div class="critic_box">
+            <section class="critic_open">
+                <div>
+                    <a href="#">
+                        <div class="critic_img01 cri"><img src="./images/critic/dongq_critic_01.jpg" alt="critic01"></div>
+                        <div class="critic_txt01 txt">
+                            <p><b><자백></b></p>
+                            <p>회상과 상상이 뒤섞인 긴장감<span>그리고 서늘함</span></p>
+                            <p>
+                                지난 10월 26일 개봉한 영화 <자백> (윤종석)에는 경찰이나 검찰이 용의자에게 요구하는 자백은 나오지 않는다. 대신 승률 100%인 변호사 양신애(김윤진)가 무죄를 주장하는 의로인 유민호(소지섭)에게 요구하는 자백만 나올 뿐이다. 수많은 범죄 영화나 드라마를 보아온 관객이라면 영화를 보며, 익숙한 상황들을 목격하게 되고, 일종의 추리 게임에 돌입하게 된다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="critic_img02 cri"><img src="./images/critic/dongq_critic_08.jpg" alt="critic08"></div>
+                        <div class="critic_txt02 txt">
+                            <p><b><헤어질 결심></b></p>
+                            <p>산에서 시작해서<span>바다에서 끝나는 영화</span></p>
+                            <p>
+                                박찬욱 감독의 <헤어질 결심>을 관람하기 전 살짝 긴장됐다. 박찬욱 감독의 이전 영화를 보며, 여러 이유로 크고 작게 놀랐던 기억 때문이었다. 결론부터 말하자면(개인차가 있겠지만) <헤어질 결심>을 보며 놀랄 일을 거의 없다. '15세 이상 관람가' 영화답게, 이전 영화 대비 강한 충격을 주진 않는다. 그래서 마음 편하게 영화 관람을 마칠 수 있었다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <div class="critic_more_btn">더보기</div>
+
+            <section class="critic_hide01">
+                <div>
+                    <a href="#">
+                        <div class="critic_img01 cri"><img src="./images/critic/dongq_critic_05.jpg" alt="critic05"></div>
+                        <div class="critic_txt01 txt">
+                            <p><b><헌트></b></p>
+                            <p>미래를 예측할 수 있다면</p>
+                            <p>
+                                1983년 10월 9일 버마에서 폭탄테러가 있었다. 이 폭탄테러로 대한민국 정부의 부총리, 장관, 비서실장 등 주요 인물들이 죽었다. 일명 ‘아웅 산 묘역 테러 사건’이다. 북한이 전두환 대통령의 아웅 산 묘소 방문을 노리고 미리 설치한 폭탄을 터뜨렸지만, 북한 공작원의 실수로 전두환 대통령 도착 직전에 폭탄이 터지게 되었고, 결국 전두환 대통령을 제외한 정부 요직과 현장에 있던 수행원, 기자 등 총 17명과 미얀마인 4명이 숨졌다. 만약 북한이 목표했던 대로 전두환 대통령이 83년의 버마에서 숨졌다면 어떻게 되었을까? 1980년 5.18 민주화 운동 이후 1987년 6.29선언까지 또다시 흘려야 했던 많은 피를 흘리지 않아도 되었을까? 아니면 또 한 번의 한국전쟁이 벌어졌을까? 영화 <헌트>를 마지막부터 거꾸로 되감아 보면 우리는 결국 우리 역사에 던져졌던 그 질문을 다시 던지게 된다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="critic_img02 cri"><img src="./images/critic/dongq_critic_07.jpg" alt="critic07"></div>
+                        <div class="critic_txt02 txt">
+                            <p><b><외계+인 1부></b></p>
+                            <p>뭘 좋아하는지 몰라서 다 준비한</p>
+                            <p>
+                                외계의 죄수들을 인간의 몸에 가두어 놓는다는 설정으로부터 시작되는 <외계+인 1부>는 그 제목에서 알 수 있는 것처럼 외계의 생명체들과 인간들에 관해 영화가 할 수 있는 모든 것들이 합쳐져 있는 종합선물 세트 같다. 외계 생명체, 로봇, 시간여행, 외계 생명체 또는 로봇에게 자란 어린아이부터 외계인만큼 평범하지 않은 도사들 등등. 디즈니 영화의 캐릭터들을 모두 모아놓은 디즈니랜드처럼 영화의 역사에서 이제까지 등장했던 수많은 설정들이 한꺼번에 몰아치듯 등장한다. 제목의 더하기표(+)가 ‘외계’와 ‘인간’ 사이에 일어날 수 있는 일들을 끝도 없이 확장하겠다는 뜻을 가리킨다는 듯이 ‘뭘 좋아하는지 몰라서 다 준비해 본’ 영화가 <외계+인 1부>라고 할 수 있는 것이다. 그런데 이 모든 것이 다 있는 백화점에 딱 하나 없는 것이 있다면 새로움이다. 이를테면 이 영화는 ‘익숙한 것들의 백화점’이라고 표현할 수 있겠다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <div class="critic_more_btn02">더보기</div>
+
+            <section class="critic_hide02">
+                <div>
+                    <a href="#">
+                        <div class="critic_img01 cri"><img src="./images/critic/dongq_critic_14.jpg" alt="critic14"></div>
+                        <div class="critic_txt01 txt">
+                            <p><b><스펜서></b></p>
+                            <p>다시 한번 다이애나를 비추다</p>
+                            <p>
+                                타인의 삶을 염탐하고 싶은 욕망은 누구도 부인할 수 없을 것이다. 우리는 그림자가 드리워진 익명의 어둠 속에서 매일 다른 사람들의 피드를 탐색하고, 미디어는 그 어둠 속의 사람들이 궁금해하는 빛 속에서 얼굴을 드러낸 몇몇을 쫓아다니며, 영화는 모두의 관심이 틀리지 않았다는 것을 증명하듯이 그들의 삶을 하나의 스토리로 꾸며낸다. 우리는 타인의 삶에서 무엇을 찾고 싶은 것일까? 나와 닮은 점일까, 나와 다른 점일까?
+                                <스펜서>는 죽음을 맞이한 지 벌써 25년이 된 영국의 왕세자비 다이애나 스펜서(크리스틴 스튜어트)의 삶을 다시 빛 속으로 꺼내온다. 도대체 그녀의 삶은 무엇이었을까? 우리의 삶과 다르지 않은 슬프고 처연한 삶이었을까, 너무도 특별하여 일찍 사그라들 수밖에 없었던 운명적 삶이었을까? 끊임없는 사람들의 염탐에서 벗어날 수 없었던 삶에 대해 말할 때 우리가 가장 먼저 떠올릴 수밖에 없는 다이애나의 삶은 이렇게 다시 한번 우리를 찾아온다. 그렇다고 해서 이 영화가 다이애나를 죽음에 이르게 하고 그녀를 악용했던 여느 미디어들처럼 다이애나의 삶에 대한 호기심만을 부추기고 있지는 않다. 어쩌면 그녀의 삶을 전시하기보다는 오히려 수없이 전시되어왔던 그녀의 삶을 그녀 자신에게 돌려주고자 한다고 해야 할 것 같다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="critic_img02 cri"><img src="./images/critic/dongq_critic_15.jpg" alt="critic15"></div>
+                        <div class="critic_txt02 txt">
+                            <p><b><킹 리차드></b></p>
+                            <p>다 계획이 있었던<span>아버지의 뻔하지 않은 이야기</span></p>
+                            <p>
+                                영화 <킹 리차드>(레이날도 마르쿠스 그린, 2021)는 테니스 선수 비너스 윌리엄스와 세레나 윌리엄스의 아버지 리차드 윌리엄스를 주인공으로 하는 영화다. 더 정확하게는 포스터의 분위기대로 아버지 리차드와 어린 비너스와 세레나를 중심으로 어머니 오라신과 다른 세 자매까지 온 가족의 이야기를 유쾌하게 담아낸 영화다.
+                                비너스와 세레나가 테니스계에서 보기 드문 흑인이라는 정도만 알고 있다면, ‘감동 실화’, ‘아버지의 헌신’, ‘가족의 희생’ 등의 키워드에 ‘인종 차별’ 등의 키워드를 떠올리게 될 듯하다. 영화 <킹 리차드>는 이런 키워드에서 크게 벗어나진 않지만, 뻔한 이야기도 아니다. 이 영화가 조금씩 예상을 빗겨나는 지점에 대해 이야기하고 싶다.
+                                소위 ‘성공 신화’의 시작에는 ‘우연’이 자리하는 경우가 많다. 우연히 발견하거나 알게 된 누군가의 천재적인 재능처럼 말이다. <킹 리차드>에서는 우연 대신 허풍처럼 느껴지기까지 하는 계획이 등장한다. 리차드는 비너스와 세레나가 태어나기 전에 세계적인 테니스 선수를 키워낼 계획을 세웠다고 한다.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="event_banner_box">
+        <div>
+            <p><b>EVENT</b></p>
+            <div class="event_banner_btn_box">
+                <div class="event_banner_more"><a href="#"><i class="fa-solid fa-plus"></i></a></div>
+                <div class="event_banner_btn">
+                    <div class="swiper-button-prev"><i class="fa-solid fa-less-than"></i></div>
+                    <div class="swiper-button-next"><i class="fa-solid fa-greater-than"></i></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="event_banner">
+            <div class="event swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_01.jpg" alt="poster01"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_02.png" alt="poster02"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_03.jpg" alt="poster03"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_04.jpg" alt="poster04"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_05.jpg" alt="poster05"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_06.jpg" alt="poster06"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_07.jpg" alt="poster07"></a></div>
+                  <div class="swiper-slide"><a href="#"><img src="./images/eventposter/dongq_event_08.jpg" alt="poster08"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="sns_box">
+        <p><b>SNS</b></p>
+
+        <div class="sns">
+            <section class="sns_top">
+                <div class="sns_top_first">
+                    <div class="sns_top_first_box">
+                        <section class="sns_top_facebook01">
+                            <div class="account01 account">
+                                <a href="#">
+                                    <img src="./images/sns_facebook_icon.png" alt="facebook_icon" class="sns_icon facebook">
+                                    <span>@cinematheque</span>
+                                    <p class="hide_txt">
+                                        모모에서 개봉 예정인 <알카라스의 여름>을 관람하시는 분들께
+                                        '<알카라스의 여름> 티저 포스터'를 선착순 증정해 드립니다.
+                                        일정: 11월 3일(목)부터 소진 시까지
+                                        경품: <알카라스의 여름> 티저 포스터 (A3)
+                                        방법: 상영 당일, 티켓 발권 시 선착순 증정
+                                        (1인 1장, 유료발권 기준)
+                                    </p>
+                                </a>
+                            </div>
+                            <a href="#"><img src="./images/sns/sns_facebook01_original.jpg" alt="모든 장치 이미지 사용"></a>
+                        </section>
+                        <section class="sns_top_insta01">
+                            <div class="account02 account">
+                                <a href="#">
+                                    <img src="./images/sns_instagram_icon.png" alt="instagram_icon" class="sns_icon instagram">
+                                    <span>@bcc_thelibrary</span>
+                                    <p class="hide_txt">
+                                        [라이브러리 이벤트]
+                                        이용자 만족도 조사
+                                        더 나은 라이브러리가 되기 위하여 이용자 만족도 조사를 실시합니다!
+                                        참여기간: 11월 8일(화) ~
+                                        참여방법: 현장에서 종이설문지 작성
+                                        or 라이브러리 프로필의 링크를 통한 작성 추첨을 통해 선물도 증정하오니 많은 참여 부탁 드려요
+                                    </p>
+                                </a>
+                            </div>
+                            <a href="#"><img src="./images/sns/sns_insta01_original.jpg" alt="모든 장치 이미지 사용"></a>
+                        </section>
+                    </div>
+
+                    <div class="sns_top_second_box">
+                        <section class="sns_top_insta02">
+                            <div class="account03 account">
+                                <a href="#">
+                                    <img src="./images/sns_instagram_icon.png" alt="instagram_icon" class="sns_icon instagram">
+                                    <span>@dureraum</span>
+                                    <p class="hide_txt">
+                                        <알카라스의 여름> 관람 후기
+                                        안녕하세요! 영화의전당 서포터즈 16기 임하은입니다! 저는 어제 개봉한 <알카라스의 여름>을 관람하고 왔는데요! 부산국제영화제에서 보고 싶었던 작품이 이렇게 빨리 영화의전당에 개봉하게 되어서 정말 행복하네요..
+                                        #영화의전당 #영화의전당_임하은 #프리다의그해여름 #알카라스의여름 #Alcarras #카를라시몬 #부국제 #부산독립영화 #부산예술영화 #영화추천 #영화리뷰 #인생영화 #영화 #
+                                    </p>
+                                </a>
+                            </div>
+                            <a href="#"><img src="./images/sns/sns_insta02_original.jpg" alt="모든 장치 이미지 사용"></a>
+                        </section>
+                        <section class="sns_top_facebook02">
+                            <div class="account04 account">
+                                <a href="#">
+                                    <img src="./images/sns_facebook_icon.png" alt="facebook_icon" class="sns_icon facebook">
+                                    <span>@dureraum</span>
+                                    <p class="hide_txt">
+                                        [라이브러리 이벤트]
+                                        이용자 만족도 조사
+                                        더 나은 라이브러리가 되기 위하여 이용자 만족도 조사를 실시합니다!
+                                        참여기간: 11월 8일(화) ~
+                                        참여방법: 현장에서 종이설문지 작성
+                                        or 라이브러리 프로필의 링크를 통한 작성 추첨을 통해 선물도 증정하오니 많은 참여 부탁 드려요
+                                    </p>
+                                </a>
+                            </div>
+                            <a href="#"><img src="./images/sns/sns_facebook02_original.jpg" alt="모든 장치 이미지 사용"></a>
+                        </section>
+                    </div>
+                </div>
+                <div class="sns_top_second">
+                    <section class="sns_top_blog">
+                        <div class="account05 account">
+                            <a href="#">
+                                <img src="./images/sns_blog_icon.png" alt="blog_icon" class="sns_icon blog">
+                                <span>@busancinema</span>
+                                <p class="hide_txt">
+                                    영화: 제11회 스웨덴영화제 <더 콰이어>
+                                    일시: 9월 21일(수)
+                                    장소: 영화의전당 소극장
+                                    안녕하세요! 영화의전당 서포터즈 16기 박민정입니다.
+                                    개인적인 일정으로 정말 바빠서 바로 눈앞에 영화의전당을 두고도 오지 못했었는데요
+                                    영화의전당은 오랜만에 와도 넘 이뻐요...!!!
+                                    공간이 주는 힐링이 정말 좋은 것 같아요♥
+                                    영화의전당에 오시면 인근 주민분들께서 산책도 하시고, 보드 타는 학생들도 많아요!
+                                    가끔 지나가다 들리기 좋은 공간이랍니다 :)
+                                </p>
+                            </a>
+                        </div>
+                        <a href="#"><img src="./images/sns/sns_blog_original.jpg" alt="모든 장치 이미지 사용"></a>
+                    </section>
+                </div>
+            </section>
+            <section class="sns_bottom">
+                <div class="sns_bottom_ytb01">
+                    <div class="account06 account">
+                        <a href="#">
+                            <img src="./images/sns_youtube_icon.png" alt="youtube_icon" class="sns_icon youtube">
+                            <span>@Dureraum</span>
+                            <p class="hide_txt">
+                                2022년 2월 22일에 성료된 "영화의전당 향후 10년 비전과 과제" 세미나!
+                                현장의 개회사부터 토론의 현장까지
+
+                                [개회사]
+                                김진해 대표이사
+
+                                [축사]
+                                박형준 부산광역시장
+                                김동호 강릉국제영화제 이사장
+                                박기용 영화진흥위원회 위원장
+                                이용관 BIFF 이사장
+
+                                [주제 발표]
+                                「영화의전당의 미래 비전과 발전 방향」
+
+                                ○발제 : 문관규 부산대 교수
+
+                                [종합 토론]
+                                ○사회 : 강내영 경성대 교수
+                                ○토론자 :
+                                박태성 문화평론가(전 부산일보 논설위원)
+                                조봉권 국제신문 기획에디터
+                                유희성 뮤지컬연출자(전 서울예술단 이사장)
+                                김호일 한국영화기자협회 초대회장
+                                전찬일 영화평론가(전 BIFF 프로그래머)
+                            </p>
+                        </a>
+                    </div>
+                    <a href="#"><img src="./images/sns/sns_youtube01_original.jpg" alt="모든 장치 이미지 사용"></a>
+                </div>
+                <div class="sns_bottom_ytb02">
+                    <div class="account07 account">
+                        <a href="#">
+                            <img src="./images/sns_youtube_icon.png" alt="youtube_icon" class="sns_icon youtube">
+                            <span>@Dureraum</span>
+                            <p class="hide_txt">
+                                Shakespeare in Movies
+                                2022-09-06(화) ~ 2022-09-18(일)
+                                헨리 5세 (1944, 로렌스 올리비에) / 맥베스 (1948, 오슨 웰즈)
+                                웨스트 사이드 스토리 (1961, 제롬 로빈스 & 로버트 와이즈)
+                                리어왕 (1970, 피터 브룩) / 오셀로 (1986, 프랑코 제피렐리)
+                                햄릿 (1990, 프랑코 제피렐리) / 로미오와 줄리엣 (1990, 바즈 루어만)
+                                셰익스피어 인 러브 (1998, 존 매든) / 한여름 밤의 꿈 (1999, 마이클 호프만)
+                            </p>
+                        </a>
+                    </div>
+                    <a href="#"><img src="./images/sns/sns_youtube02_original.jpg" alt="모든 장치 이미지 사용"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="mapinfo_box">
+        <input type="checkbox" name="map" id="chk_map">
+        <section class="map_box">
+
+            <div class="map_api" id="map"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=54fcda6aeda2d89256a06707a7bee46b"></script>
+
+            <label for="chk_map" class="chk_map">오시는 길<i class="fa-solid fa-angle-down"></i></label>
+
+            <div class="map_txt">
+                <p>
+                    <b>
+                        영화의 전당으로<span>오시는 길>>></span>
+                    </b>
+                </p>
+
+                <p>
+                    지하철 & 버스 이용안내:
+                    <span>
+                        2호선 센텀시티역 하차(12번, 6번출구), 도보로 5분<br/>
+                        버스: 5-1, 141, 155, 181, 1001(급행), 1002(급행)
+                    </span>
+                </p>
+
+                <p>
+                    항공 이용안내:
+                    <span>
+                        인천국제공항, 김포공항 탑승 → 김해국제공항(50분) → 공항리무진버스 탑승 후 신세계백화점 하차(50분)
+                    </span>
+                </p>
+
+                <p>
+                    철도 이용안내:
+                    <span>
+                        서울역 KTX 탑승
+                        <span>
+                            부산역 하차(2시간 40분) → 부산역 앞 버스정류장에서 5-1, 40, 1001 → 신세계백화점 앞 하차 후 도보로 5분
+                        </span>
+                    </span>
+                </p>
+            </div>
+        </section>
+
+        <section class="info_box">
+            <div class="employment">
+                <p><b>채용공고</b><i class="fa-solid fa-plus"></i></p>
+                <ul class="txt_box">
+                    <li>
+                        <a href="#">
+                            <span class="title">영화의 전당 제5차 직원 채용 면접 시험 결과</span>
+                            <span class="date">2022-11-07</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">하반기 신규직원 채용 필기시험 합격자 발표 결과</span>
+                            <span class="date">2022-11-02</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">제5차 직원 채용 서류전형 합격자 발표 및 면접자 결과</span>
+                            <span class="date">2022-10-24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">영화의 전당 기간제(휴직대체) 직원 채용 공고</span>
+                            <span class="date">2022-10-04</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="news">
+                <p><b>언론보도</b><i class="fa-solid fa-plus"></i></p>
+                <ul class="txt_box">
+                    <li>
+                        <a href="#">
+                            <span class="title">영화의 전당, 야외광장 활성화로 시민소통 강화 예정</span>
+                            <span class="date">2022-11-07</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">성난 젊은이들의 날카로운 외침</span>
+                            <span class="date">2022-11-07</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">영화의 전당, 문화예술 직업체험 프로그램 마련</span>
+                            <span class="date">2022-11-01</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="title">장애·장벽 없이 함께즐기는 영화 축제</span>
+                            <span class="date">2022-10-24</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+    </div>
+
+
+    <div class="service_box">
+        <input type="checkbox" name="serviceinfo" id="chk_info">
+        <label for="chk_info" class="chk_info">추가정보<i class="fa-solid fa-angle-down"></i></label>
+        
+        <section class="info">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">장애인 이용안내</a></li>
+                <li><a href="#">취소/환불 가이드</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">고객참여</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+        </section>
+
+        <section class="agency">
+            <div class="relevant_box">
+                <p>유관기관<a href="#"><i class="fa-solid fa-plus"></i></a></p>
+            
+                <div class="relevant">
+                    <ul>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_01.jpg" alt="relevant01"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_02.jpg" alt="relevant02"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_03.jpg" alt="relevant03"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_04.jpg" alt="relevant04"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_05.jpg" alt="relevant05"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_06.jpg" alt="relevant06"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_07.jpg" alt="relevant07"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_08.jpg" alt="relevant08"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_09.png" alt="relevant09"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_10.jpg" alt="relevant10"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_11.png" alt="relevant11"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_12.png" alt="relevant12"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_13.jpg" alt="relevant13"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_14.png" alt="relevant14"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_15.jpg" alt="relevant15"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_16.jpg" alt="relevant16"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_17.jpg" alt="relevant17"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_18.jpg" alt="relevant18"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_19.jpg" alt="relevant19"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/relevant/dongq_re_20.jpg" alt="relevant20"></a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mesena_box">
+                <p>2021 메세나 기업<a href="#"><i class="fa-solid fa-plus"></i></a></p>
+                <div class="mesena">
+                    <ul>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/mesena/dongq_mecenat_01.jpg" alt="mesena01"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/mesena/dongq_mecenat_02.jpg" alt="mesena02"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/mesena/dongq_mecenat_03.jpg" alt="mesena03"></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><img src="./images/agency/mesena/dongq_mecenat_04.jpg" alt="mesena04"></a></div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="letter">
+            <p>영화의 전당 뉴스레터</p>
+            <a href="#">구독하기</a>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div>
+            <div>
+                <p>
+                    (우) 48058 부산광역시 해운대구<span>수영강변대로 120<span>영화의전당 (우동 1467번지)</span></span>
+                </p>
+                <p>
+                    TEL. 051-780-6000/6080   Fax. 051-780-6019  
+                </p>
+                <p>
+                    (재)영화의전당  대표자 김진해 사업자번호 : 617-82-11427
+                    <span>통신판매업신고 : 부산해운 제0510호 <a href="#">사업자정보 확인</a></span>
+                </p>
+                <p>
+                    COPYRIGHT(C) BUSAN CINEMA CENTER. ALL RIGHTS RESERVED
+                </p>
+            </div>
+            <div>
+                <div><img src="./images/logo_mono.png" alt="logo_mono"></div>
+                <div><img src="./images/mark_img.png" alt="mark"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="move_btn">
+        <div class="wish_list">
+            위시<br/>
+            리스트
+        </div>
+
+        <div class="speed_reservation">
+            <a href="#">
+                빠른<br/>
+                예매
+            </a>
+        </div>
+
+        <section class="top_btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </section>
+
+        <section class="bottom_btn">
+            <i class="fa-solid fa-angle-down"></i>
+        </section>
+    </div>
+
+</body>
+</html>
